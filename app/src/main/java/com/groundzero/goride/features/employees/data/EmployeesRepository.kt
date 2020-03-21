@@ -5,5 +5,5 @@ import javax.inject.Inject
 
 
 class EmployeesRepository @Inject constructor(private val dataSource: EmployeesDataSource) {
-    val themes = resultLiveData(networkCall = {dataSource.fetchThemes()})
+    val employees = resultLiveData(networkCall = {dataSource.fetchEmployees()})
 }

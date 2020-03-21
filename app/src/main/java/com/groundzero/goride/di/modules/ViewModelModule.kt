@@ -15,7 +15,7 @@ abstract class ViewModelModule {
     @Binds
     @IntoMap
     @ViewModelKey(EmployeesViewModel::class)
-    abstract fun bindThemeViewModel(viewModel: EmployeesViewModel): ViewModel
+    abstract fun bindEmployeesViewModel(viewModel: EmployeesViewModel): ViewModel
 
     @Binds
     abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory

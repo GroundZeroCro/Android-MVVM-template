@@ -30,7 +30,7 @@ class EmployeesFragment : Fragment(), Injectable {
     ): View? {
         val binding = FragmentRandomBinding.inflate(inflater, container, false)
         viewModel = injectViewModel(viewModelFactory)
-        viewModel.themes.observe(this, Observer { t -> println(t.data) })
+        viewModel.employeesLive.observe(this, Observer { t -> println(t.data) })
         println(car.name())
         return binding.root
     }

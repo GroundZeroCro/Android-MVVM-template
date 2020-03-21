@@ -5,5 +5,5 @@ import com.groundzero.goride.features.employees.data.EmployeesRepository
 import javax.inject.Inject
 
 class EmployeesViewModel @Inject constructor(repository: EmployeesRepository) : ViewModel() {
-    val themes = repository.themes
+    val employeesLive = repository.employees
 }
